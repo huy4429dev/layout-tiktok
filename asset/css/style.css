@@ -1,0 +1,446 @@
+/* @media (min-width: 1020px) {
+    .container {
+        max-width: 1176px;
+    }
+} */
+
+
+/**
+* custom scroll bar
+*/
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #B0B0B4;
+}
+
+
+/**
+* reset css
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+html,
+body {
+    width: 1358px;
+    margin: auto;
+    height: 100%;
+}
+
+
+/**
+* Navigation
+*/
+
+ul.list-nav {
+    z-index: 999999;
+    position: fixed;
+    top: -70px;
+    left: 0;
+    bottom: 0;
+    width: 312px;
+    background-color: white;
+    padding: 21px 27px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    line-height: 32px;
+    transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 300ms;
+    -webkit-transition: transform 300ms;
+    transition: transform 300ms;
+    border-top: 70px solid #fff;
+    height: calc(100% + 70px);
+}
+
+.overlay-gray {
+    width: 100%;
+    position: fixed;
+    top: -70px;
+    z-index: 99999;
+    height: calc(100% + 70px);
+    background: rgba(0, 0, 0, 0.6);
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.hide-nav {
+    transform: translateX(0) !important;
+}
+
+.hide-overlay {
+    display: block !important;
+}
+
+nav ul.list-nav li ul {
+    margin-top: 50px;
+}
+
+ul.list-nav span {
+    color: gray;
+}
+
+ul.list-nav i {
+    font-size: 22px;
+}
+
+ul.list-nav::-webkit-scrollbar {
+    display: none;
+}
+
+ul.list-nav ul li a:hover {
+    border-bottom: none;
+    padding-bottom: 3px;
+    text-decoration: none;
+    border-bottom: 2px solid red;
+}
+
+#logo:hover {
+    border-bottom: none;
+}
+
+ul.list-nav a {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/*
+* header
+*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 20px 14px 20px;
+    border-bottom: 1px solid #8080804a;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 9999;
+}
+
+.menu-left {
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+    margin-left: 9px;
+    margin-top: 7px;
+}
+
+a.icon {
+    font-size: 21px;
+    color: #636060;
+}
+
+.view-now a {
+    font-size: 16px;
+    background: #FE2C55;
+    color: white;
+    width: 112px;
+    height: 43px;
+    display: inline-block;
+    line-height: 43px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+/**
+*  index main
+*/
+
+main {
+    margin-top: 70px;
+}
+
+.main-title h1 {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1;
+    color: black;
+    margin-bottom: 3px;
+}
+
+.main-title {
+    padding-top: 35px;
+    padding-bottom: 6px;
+}
+
+.main-title p {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.gif {
+    height: 483px;
+    overflow: hidden;
+}
+
+.gif img {
+    max-width: 271.5px !important;
+    height: 100%;
+}
+
+
+/**
+*  footer
+*/
+
+.get-contact-tiktok {
+    height: 221px;
+    color: white;
+    background: black;
+    padding: 29px 134px;
+    border: none;
+    border-bottom: 1px solid #9a9393;
+}
+
+.get-contact-tiktok h4 {
+    font-size: 24px;
+    margin-bottom: 13px;
+}
+
+.get-contact-tiktok input,
+select {
+    height: 42px;
+    text-indent: 20px;
+    font-size: 18px;
+}
+
+.get-contact-tiktok select {
+    max-width: 92px;
+    position: relative;
+    top: -3px;
+    left: 15px;
+    height: 41px;
+    background: white;
+    color: #8A8B91;
+    cursor: pointer;
+    text-indent: 11px;
+    border-right: 1px transparent;
+    border: none;
+    font-size: 16px;
+}
+
+.get-contact-tiktok input[type="submit"] {
+    text-indent: 0;
+    padding: 0px 14px;
+    height: 42px;
+    line-height: 43px;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #fe2c55;
+    color: #ffffff;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-right: 0px;
+    position: relative;
+    left: 6px;
+}
+
+.get-contact-tiktok input[type="text"] {
+    position: relative;
+    top: -2px;
+    left: 11px;
+    width: 290px;
+}
+
+input,
+select {
+    outline: none;
+}
+
+.contact p {
+    font-size: 9px;
+    line-height: 24px;
+    color: #dedede;
+    width: 374px;
+    text-align: center;
+    line-height: 12px;
+    margin-top: 10px;
+}
+
+.wrapper-text-contact {
+    width: 87%;
+    margin: auto;
+}
+
+.down-load-app h4 {
+    text-align: center;
+}
+
+.down-load-app ul {
+    display: flex;
+    padding-left: 19px;
+    position: relative;
+    top: -4px;
+}
+
+
+/**
+* Footer
+*/
+
+footer {
+    background: black;
+    padding: 40px 103px 23px 140px;
+}
+
+.down-load-app h4 {
+    width: 468px;
+    margin: auto;
+    margin-bottom: 13px;
+}
+
+.one-list ul li:first-child a {
+    color: white;
+}
+
+.one-list ul li a {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+.ft-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 44px;
+}
+
+.one-list {
+    display: flex;
+    margin-left: 71px;
+}
+
+.one-list ul li {
+    width: 226px;
+    height: 28px;
+}
+
+.lang select {
+    background: black;
+    color: white;
+    font-size: 15px;
+    width: 170px;
+    height: 34px;
+    text-indent: 12px;
+    font-size: 14px;
+}
+
+.ft-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nocopyright {
+    color: gray;
+    font-size: 14px;
+    margin-right: 39px;
+    margin-top: 14px;
+}
+
+@media(max-width:992px) {
+    .get-contact-tiktok h4 {
+        font-size: 1rem;
+    }
+    .get-contact-tiktok input[type="submit"] {
+        padding: 0 7px;
+    }
+    .get-contact-tiktok input[type="text"] {
+        max-width: 203px;
+    }
+    .get-contact-tiktok select {
+        max-width: 92px;
+    }
+    .wrapper-text-contact {
+        width: 100%;
+    }
+    .get-contact-tiktok {
+        height: 261px;
+    }
+    .contact {
+        text-align: center;
+    }
+    .contact p {
+        display: inline-block;
+    }
+}
+
+@media(max-width:480px) {
+    body {
+        width: 100%;
+    }
+    header {
+        position: absolute;
+    }
+    .main-title {
+        display: none;
+    }
+    div.gifs {
+        flex-direction: column;
+    }
+    .gif img {
+        max-width: 100% !important;
+    }
+    .contact {
+        display: none;
+    }
+    .get-contact-tiktok {
+        max-width: 480px;
+    }
+    .down-load-app ul {
+        flex-direction: column;
+    }
+    footer {
+        max-width: 480px;
+    }
+    .one-list {
+        flex-direction: column;
+    }
+    .down-load-app h4 {
+        width: 100%
+    }
+    .ft-top {
+        flex-direction: column;
+    }
+    .ft-bottom {
+        flex-direction: column;
+    }
+    .nocopyright {
+        margin-right: 39px;
+    }
+}
