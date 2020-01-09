@@ -6,7 +6,8 @@
 
 @media (max-width: 768px) {
     .container {
-        max-width: 768px;
+        max-width: 100%;
+        /*margin: 20px;*/
     }
 }
 
@@ -56,7 +57,7 @@ body {
 
 html,
 body {
-    width: 1358px;
+    /*width: 1358px;*/
     margin: auto;
     height: 100%;
 }
@@ -347,16 +348,6 @@ footer {
     padding-bottom: 44px;
 }
 
-.one-list {
-    display: flex;
-    margin-left: 71px;
-}
-
-.one-list ul li {
-    width: 226px;
-    height: 28px;
-}
-
 .lang select {
     background: black;
     color: white;
@@ -367,16 +358,10 @@ footer {
     font-size: 14px;
 }
 
-.ft-bottom {
-    display: flex;
-    justify-content: space-between;
-}
 
 .nocopyright {
     color: gray;
     font-size: 14px;
-    margin-right: 39px;
-    margin-top: 14px;
 }
 
 @media(max-width:992px) {
@@ -432,7 +417,7 @@ footer {
         flex-direction: column;
     }
     footer {
-        max-width: 480px;
+        /*max-width: 480px;*/
     }
     .one-list {
         flex-direction: column;
