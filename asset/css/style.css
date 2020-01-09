@@ -1,43 +1,45 @@
 @media (min-width: 992px) {
     .container {
-        max-width: 1180px;
+        max-width: 1180px !important;
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .container {
         max-width: 100%;
         /*margin: 20px;*/
     }
 }
 
+@media (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
 
 /**
 * custom scroll bar
 */
 
- ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 8px;
     height: 5px;
 }
 
-
 /* Track */
 
- ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     -webkit-border-radius: 5px;
     border-radius: 5px;
 }
 
-
 /* Handle */
 
- ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: #B0B0B4;
 }
-
 
 /**
 * reset css
@@ -61,7 +63,6 @@ body {
     margin: auto;
     height: 100%;
 }
-
 
 /**
 * Navigation
@@ -141,7 +142,6 @@ ul.list-nav a {
     font-weight: 500;
 }
 
-
 /*
 * header
 */
@@ -183,7 +183,6 @@ a.icon {
     font-weight: 600;
 }
 
-
 /**
 *  index main
 */
@@ -219,7 +218,6 @@ main {
     max-width: 271.5px !important;
     height: 100%;
 }
-
 
 /**
 *  footer
@@ -317,7 +315,6 @@ select {
     top: -4px;
 }
 
-
 /**
 * Footer
 */
@@ -358,79 +355,98 @@ footer {
     font-size: 14px;
 }
 
-
 .nocopyright {
     color: gray;
     font-size: 14px;
 }
 
-@media(max-width:992px) {
+@media (max-width: 992px) {
     .get-contact-tiktok h4 {
         font-size: 1rem;
     }
+
     .get-contact-tiktok input[type="submit"] {
         padding: 0 7px;
     }
+
     .get-contact-tiktok input[type="text"] {
         max-width: 203px;
     }
+
     .get-contact-tiktok select {
         max-width: 92px;
     }
+
     .wrapper-text-contact {
         width: 100%;
     }
+
     .get-contact-tiktok {
         height: 261px;
     }
+
     .contact {
         text-align: center;
     }
+
     .contact p {
         display: inline-block;
     }
 }
 
-@media(max-width:480px) {
+@media (max-width: 480px) {
     body {
         width: 100%;
     }
+
     header {
         position: absolute;
     }
+
     .main-title {
         display: none;
     }
+
     div.gifs {
         flex-direction: column;
     }
+
     .gif img {
         max-width: 100% !important;
     }
+
     .contact {
         display: none;
     }
+
     .get-contact-tiktok {
         max-width: 480px;
     }
+
     .down-load-app ul {
         flex-direction: column;
     }
+
     footer {
         /*max-width: 480px;*/
     }
+
     .one-list {
         flex-direction: column;
     }
+
     .down-load-app h4 {
         width: 100%
     }
+
     .ft-top {
         flex-direction: column;
     }
+
     .ft-bottom {
         flex-direction: column;
     }
+
     .nocopyright {
         margin-right: 39px;
     }
@@ -544,6 +560,9 @@ h1.title-popular {
     border-radius: 7px;
     height: 100%;
     cursor: pointer;
+    /*max-height: 380px;*/
+    width: 100%;
+    /*transform: scale(1.1);*/
 }
 
 ul.social i {
